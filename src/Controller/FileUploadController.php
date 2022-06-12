@@ -8,9 +8,12 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class FileUploadController extends AbstractController
 {
-    #[Route('/file/upload', name: 'app_file_upload')]
+    #[Route('/', name: 'app_file_upload')]
     public function index(): Response
     {
+
+
+        
         return $this->render('file_upload/index.html.twig', [
             'controller_name' => 'FileUploadController',
         ]);
